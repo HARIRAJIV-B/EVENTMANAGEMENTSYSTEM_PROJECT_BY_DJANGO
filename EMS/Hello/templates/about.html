@@ -1,0 +1,191 @@
+##{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> About</title>
+  
+    <link rel="shortcut icon" href="/static/" type="image/x-icon">
+  
+    
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+    }
+    
+    html {
+      box-sizing: border-box;
+    }
+  
+    *,
+    *:before,
+    *:after {
+      box-sizing: inherit;
+    }
+  
+    .column {
+      float: left;
+      width: 33.3%;
+      margin-bottom: 16px;
+      padding: 0 8px;
+    }
+  
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin: 8px;
+    }
+  
+    .about-section {
+      padding: 50px;
+      text-align: center;
+      background-color: #474e5d;
+      color: white;
+    }
+  
+    .container {
+      padding: 0 16px;
+    }
+  
+    .container::after,
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  
+    .title {
+      color: grey;
+    }
+  
+    .button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 8px;
+      color: white;
+      background-color: #000;
+      text-align: center;
+      cursor: pointer;
+      width: 100%;
+    }
+  
+    .button:hover {
+      background-color: #555;
+    }
+  
+    @media screen and (max-width: 650px) {
+      .column {
+        width: 100%;
+        display: block;
+      }
+    }
+  
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><meta name="description" content=""><meta name="author" content=""><link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico"><link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">< !-- Bootstrap core CSS --><link href="../../dist/css/bootstrap.min.css" rel="stylesheet">< !-- Custom styles for this template --><link href="album.css" rel="stylesheet">
+  </style>
+  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+      <style>
+        #footer {
+          position: float;
+          padding:  0px 10px;
+          bottom: 0;
+          width: 100%;
+          /* Height of the footer*/
+          height: 40px;
+      }
+      </style>
+  </head>
+  
+  <body>
+    
+    <main role="main">
+    
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">About Us</h1>
+          <p class="lead text-muted">We are from <b>KL University</b></p>
+          <p> Below Are The People Who
+            Worked In Our Project</p>
+        </div>
+      </section>
+    
+      <div class="album py-5 bg-light">
+        <div class="container">
+    
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="/static/gkk.jpg" height="375px">
+                <div class="card-body">
+                  <p class="card-text">Name- GOPIKRISHNA<br>Email- 2200030937@kluniversity.in<br>Contribution- BackEnd Designer</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="/static/hr.jpg" height="375px">
+                <div class="card-body">
+                  <p class="card-text">Name- HARI_RAJIV<br>Email- 2200032306@kluniversity.in<br>Contribution- Frontend,Backend designer</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="/static/manu.jpg" height="375px" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Name- MANIKANTA_THUNUGUNTLA<br>Email- 2200031380@kluniversity.in<br>Contribution- Front End Implementation</p>
+                  <div class="d-flex justify-content-between align-items-center">
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+    
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    
+    <footer class="text-muted">
+      <div class="container">
+        <div class="mx-auto" style="width: 200px">
+          <center>
+          <p class="float-right" my-4="">
+            <a href="#" class="btn btn-outline-primary">Back to top</a>
+          </p>
+          <p class="float-right">
+            <a href="/" class="btn btn-outline-danger">Go To Home</a>
+          </p>
+        </center>
+        </div>
+      </div>
+    </footer>
+    
+     <div id="footer">
+        <footer class="bg-light text-center text-lg-start">
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2022 Copyright:
+            <a class="text-dark" href="https://www.kluniversity.in/">KL University</a>
+            
+      </div>
+          </footer></div>
+          <!-- Copyright -->
+        
+    
+    
+    </body></html>
+{% endblock body %}##

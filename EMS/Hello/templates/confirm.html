@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% block title %}Confirm{% endblock title %}
+{% block body %}
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+
+font-family: 'Montserrat', sans-serif
+}
+.card {
+border: none
+}
+.logo {
+background-color: #eeeeeea8
+}
+.totals tr td {
+font-size: 13px
+}
+.footer {
+background-color: #eeeeeea8
+}
+.footer span {
+font-size: 12px
+}
+.product-qty span {
+font-size: 12px;
+color: #dedbdb
+}
+</style>
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+    <div class="col-md-8">
+    <div class="card">
+        <div  </div>
+    <div class="text-left logo p-2 px-5"> <img src="/static/logoo.jpg"  width="50"> <h4 style="float:right";>Event Management System </h4> </div>
+    <style>h4 {
+		position: absolute;
+		left: 110px;
+		bottom: 445px;
+		}</style>
+    <div class="invoice p-5">
+    <h5>Your order Confirmed!</h5><span class="font-weight-bold d-block mt-4" class="hello-msg">Hi,{{request.user}}</span>  <span>Your order has been received!</span>
+    <div class="payment border-top mt-3 mb-3 border-bottom table-responsive">
+    <table class="table table-borderless">
+    <tbody>
+    <tr>
+    <td>
+        <div class="py-2"> <span class="d-block text-muted">Date</span>
+        <div id="current_date"></p>
+            <script>
+            date = new Date();
+            year = date.getFullYear();
+            month = date.getMonth() + 1;
+            day = date.getDate();
+            document.getElementById("current_date").innerHTML = day + "/" +  month + "/" + year;
+            </script>
+     </div>
+    </td>
+    <td>
+    <div class="py-2"> <span class="d-block text-muted">Order No</span> 
+        <p id="demo"></p>
+        <script>
+        let x = Math.floor((Math.random() * 1000) + 1);
+        document.getElementById("demo").innerHTML = "mt"+x+"sge";
+        </script>
+        </body>
+        </html>
+    </td>
+    <td>
+    <div class="py-2"> <span class="d-block text-muted">Payment</span> <span><img src="https://img.icons8.com/color/48/000000/mastercard.png" width="20" /></span> </div>
+    </td>
+    </tr>
+    </tbody>
+    </table>
+    </div>
+    <p></p>
+    <p class="font-weight-bold mb-0">Thanks You for your booking!</p> <span>Event Management Team</span>
+    </div>
+    <div class="d-flex justify-content-between footer p-3"> <span>It would be greate If you provide your <a href="/contact"> Feedback</a></span>  </div>
+    </div>
+    </div>
+    </div>
+    </div>  
+    
+{% endblock body %}
+
